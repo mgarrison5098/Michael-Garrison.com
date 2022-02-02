@@ -30,10 +30,7 @@
 
 <?php wp_footer(); ?>
 
-</body>
-</html>
 
-<!-- 
 Our software development services are designed around the needs of our clients, and we adapt our services to meet the changing needs of new and existing clients.
 
 We at Btechz.com, provide services like Software Development, Web Development, Mobile Application Development, SEO, SEO Consulting, Branding and Digital Marketing.
@@ -41,4 +38,9 @@ We at Btechz.com, provide services like Software Development, Web Development, M
 If you need help with software, development, engineering, or creativity to solve your problem, look no further. We offer a wide range of services to create great software quickly and cost effectively.
 
 We provide quality software solutions for small and large businesses. Our objective is to understand your needs and deliver a seamless, on-time and cost-effective solution.
- -->
+
+
+</body>
+</html>
+
+
