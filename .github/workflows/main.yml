@@ -30,13 +30,13 @@ jobs:
 #           password: ${{ secrets.SSH_PASSWORD }}
 #           port: ${{ secrets.SSH_PORT }}
 #           script: ls
-        - name: deploy file
-          uses: hengkx/ssh-deploy@v1.0.1
-          env:
-            USERNAME: ${{ secrets.SSH_USERNAME }}
-            HOST: ${{ secrets.SSH_HOST }}
-            PASSWORD: ${{ secrets.SSH_PASSWORD }}
-            PORT: ${{ secrets.SSH_PORT }}
-            SOURCE: '/home/runner/work/Michael-Garrison.com/Michael-Garrison.com'
-            TARGET: '/home/michaelg/staging.Michael-Garrison.com/public/wp-content/themes/'
+        - name: SSH Server Deploy
+          uses: kostya-ten/ssh-server-deploy@v4
+          with:
+            username: ${{ secrets.SSH_USERNAME }}
+            host: ${{ secrets.SSH_HOST }}
+            password: ${{ secrets.SSH_PASSWORD }}
+            port: ${{ secrets.SSH_PORT }}
+            scp_source: '/home/runner/work/Michael-Garrison.com/Michael-Garrison.com'
+            scp_target: '/home/michaelg/staging.Michael-Garrison.com/public/wp-content/themes/'
 
