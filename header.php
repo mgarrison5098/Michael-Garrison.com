@@ -50,7 +50,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<!-- <nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'michael-garrison' ); ?></button>
 			<?php
 			wp_nav_menu(
@@ -60,5 +60,14 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>#site-navigation -->
+		<nav class="uk-navbar-container" uk-navbar>
+			<div class="uk-navbar-left">
+				<ul class="uk-navbar-nav">
+					<li class="uk-active"><a href="">Test</a></li>
+					<li class="uk-parent"><a href="">Test 2</a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</nav>
 	</header><!-- #masthead -->
